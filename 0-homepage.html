@@ -44,7 +44,20 @@
     ></script>
 
     <!-- Custom CSS -->
-    <!-- NOTE!0 LINK ORDER ERROR EXAMPLE HERE -->
+    <!--
+      MockError-0:
+
+      Based on file history, this appears to be one of the first bootstrap 
+      errors I historically made. I was using the bootstrap CDN in a flask app 
+      base template for base styling. I was also using a custom global CSS file to 
+      override bootstrap styling. Additionally, I had set up the base template in such 
+      a way that each page would have a unique CSS file to override the global CSS file.
+
+      Awesome right? Of course it is, but I sadly made an error in the construction of 
+      my extensible blocks and loaded individual CSS files for each page piror to the 
+      bootstrap and global CSS files. This meant that the bootstrap and global CSS files 
+      would override the individual CSS files.
+    -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
