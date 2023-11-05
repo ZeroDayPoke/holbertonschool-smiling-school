@@ -14,6 +14,13 @@
   background-position: center center;
 }
 
+.courses-banner-background {
+  background-image: url("images/pic_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 .btn:hover,
 .btn:active {
   opacity: 0.9;
