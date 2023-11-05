@@ -70,3 +70,11 @@
 .nav-link-active {
   text-decoration: underline;
 }
+
+.star-icon {
+  max-height: 15px;
+}
+
+.smiley-icon {
+  max-height: 45px;
+}
