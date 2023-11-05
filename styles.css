@@ -66,3 +66,7 @@
 .check-indicator-color {
   color: #82D24F;
 }
+
+.nav-link-active {
+  text-decoration: underline;
+}
