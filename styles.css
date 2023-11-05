@@ -62,3 +62,7 @@
   max-height: 30px;
   float: left;
 }
+
+.check-indicator-color {
+  color: #82D24F;
+}
