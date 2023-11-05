@@ -44,25 +44,14 @@
     ></script>
 
     <!-- Custom CSS -->
-    <!--
-      MockError-0:
-
-      Based on file history, this appears to be one of the first bootstrap 
-      errors I historically made. I was using the bootstrap CDN in a flask app 
-      base template for base styling. I was also using a custom global CSS file to 
-      override bootstrap styling. Additionally, I had set up the base template in such 
-      a way that each page would have a unique CSS file to override the global CSS file.
-
-      Awesome right? Of course it is, but I sadly made an error in the construction of 
-      my extensible blocks and loaded individual CSS files for each page piror to the 
-      bootstrap and global CSS files. This meant that the bootstrap and global CSS files 
-      would override the individual CSS files.
-    -->
+    <!-- NOTE!0 LINK ORDER ERROR EXAMPLE HERE -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
+      <!-- Hero/Header Banner Wrap -->
       <div class="header-banner-background">
+        <!-- HEADER SECTION -->
         <header>
           <nav class="navbar navbar-expand-sm navbar-dark bg-transparent">
             <div class="container">
@@ -77,28 +66,32 @@
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <a class="navbar-brand mx-auto mx-sm-0" href="#">
+              <a class="navbar-brand mx-auto mx-sm-0" href="homepage.html">
                 <img src="images/logo.png" alt="smiley logo txt" height="40" />
               </a>
               <div
-                class="collapse navbar-collapse justify-content-center"
+                class="collapse navbar-collapse justify-content-center justify-content-md-end"
                 id="navbarNav"
               >
-                <ul class="navbar-nav flex-column flex-sm-row text-center">
+                <ul
+                  class="navbar-nav flex-column flex-sm-row text-center text-lg-left"
+                >
                   <li class="nav-item active">
-                    <a class="nav-link" href="courses">COURSES</a>
+                    <a class="nav-link" href="courses.html">COURSES</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pricing">PRICING</a>
+                    <a class="nav-link" href="pricing.html">PRICING</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="login">LOGIN</a>
+                    <a class="nav-link" href="#">LOGIN</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
         </header>
+
+        <!-- BANNER HERO SECTION -->
         <section class="banner-section text-white text-center">
           <div class="container">
             <div class="row">
@@ -112,7 +105,7 @@
                   <span class="mx-3">Laugh</span>
                 </p>
                 <a
-                  href="register-link-unknown-atm"
+                  href="#"
                   class="btn btn-primary btn-lg my-4 rounded-pill shadow"
                   role="button"
                 >
@@ -122,45 +115,45 @@
             </div>
             <div class="row">
               <div class="col-12">
-                <h2><span>Learn</span> from the pros</h2>
+                <h2><span class="text-primary">Learn</span> from the pros</h2>
               </div>
             </div>
             <div class="row text-center">
-              <div class="col-6 col-md-3 mb-4">
+              <div class="col-6 col-sm-3 mb-4">
                 <img
                   src="images/profile_1.jpg"
                   alt="massey"
-                  class="img-fluid rounded-circle"
+                  class="img-fluid rounded-circle hero-icon"
                 />
                 <h3 class="text-white mt-2">Phillip Massey</h3>
                 <p class="text-white">Smile of the year</p>
                 <p class="text-white">2018-2019</p>
               </div>
-              <div class="col-6 col-md-3 mb-4">
+              <div class="col-6 col-sm-3 mb-4">
                 <img
                   src="images/profile_2.jpg"
                   alt="lawrence"
-                  class="img-fluid rounded-circle"
+                  class="img-fluid rounded-circle hero-icon"
                 />
                 <h3 class="text-white mt-2">Nannie Lawrence</h3>
                 <p class="text-white">Best little smile</p>
                 <p class="text-white">2017</p>
               </div>
-              <div class="col-6 col-md-3 mb-4">
+              <div class="col-6 col-sm-3 mb-4">
                 <img
                   src="images/profile_3.jpg"
                   alt="walters"
-                  class="img-fluid rounded-circle"
+                  class="img-fluid rounded-circle hero-icon"
                 />
                 <h3 class="text-white mt-2">Bruce Walters</h3>
                 <p class="text-white">Best Friend Smile</p>
                 <p class="text-white">2019</p>
               </div>
-              <div class="col-6 col-md-3 mb-4">
+              <div class="col-6 col-sm-3 mb-4">
                 <img
                   src="images/profile_4.jpg"
                   alt="hughes"
-                  class="img-fluid rounded-circle"
+                  class="img-fluid rounded-circle hero-icon"
                 />
                 <h3 class="text-white mt-2">Henry Hughes</h3>
                 <p class="text-white">24h smiles winner</p>

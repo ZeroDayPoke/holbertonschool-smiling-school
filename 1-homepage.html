@@ -49,7 +49,9 @@
   </head>
   <body>
     <main>
+      <!-- Hero/Header Banner Wrap -->
       <div class="header-banner-background">
+        <!-- HEADER SECTION -->
         <header>
           <nav class="navbar navbar-expand-sm navbar-dark bg-transparent">
             <div class="container">
@@ -64,28 +66,32 @@
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <a class="navbar-brand mx-auto mx-sm-0" href="#">
+              <a class="navbar-brand mx-auto mx-sm-0" href="homepage.html">
                 <img src="images/logo.png" alt="smiley logo txt" height="40" />
               </a>
               <div
-                class="collapse navbar-collapse justify-content-center"
+                class="collapse navbar-collapse justify-content-center justify-content-md-end"
                 id="navbarNav"
               >
-                <ul class="navbar-nav flex-column flex-sm-row text-center">
+                <ul
+                  class="navbar-nav flex-column flex-sm-row text-center text-lg-left"
+                >
                   <li class="nav-item active">
-                    <a class="nav-link" href="courses">COURSES</a>
+                    <a class="nav-link" href="courses.html">COURSES</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pricing">PRICING</a>
+                    <a class="nav-link" href="pricing.html">PRICING</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="login">LOGIN</a>
+                    <a class="nav-link" href="#">LOGIN</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
         </header>
+
+        <!-- BANNER HERO SECTION -->
         <section class="banner-section text-white text-center">
           <div class="container">
             <div class="row">
@@ -99,7 +105,7 @@
                   <span class="mx-3">Laugh</span>
                 </p>
                 <a
-                  href="register-link-unknown-atm"
+                  href="#"
                   class="btn btn-primary btn-lg my-4 rounded-pill shadow"
                   role="button"
                 >
@@ -109,45 +115,45 @@
             </div>
             <div class="row">
               <div class="col-12">
-                <h2><span>Learn</span> from the pros</h2>
+                <h2><span class="text-primary">Learn</span> from the pros</h2>
               </div>
             </div>
             <div class="row text-center">
-              <div class="col-6 col-md-3 mb-4">
+              <div class="col-6 col-sm-3 mb-4">
                 <img
                   src="images/profile_1.jpg"
                   alt="massey"
-                  class="img-fluid rounded-circle"
+                  class="img-fluid rounded-circle hero-icon"
                 />
                 <h3 class="text-white mt-2">Phillip Massey</h3>
                 <p class="text-white">Smile of the year</p>
                 <p class="text-white">2018-2019</p>
               </div>
-              <div class="col-6 col-md-3 mb-4">
+              <div class="col-6 col-sm-3 mb-4">
                 <img
                   src="images/profile_2.jpg"
                   alt="lawrence"
-                  class="img-fluid rounded-circle"
+                  class="img-fluid rounded-circle hero-icon"
                 />
                 <h3 class="text-white mt-2">Nannie Lawrence</h3>
                 <p class="text-white">Best little smile</p>
                 <p class="text-white">2017</p>
               </div>
-              <div class="col-6 col-md-3 mb-4">
+              <div class="col-6 col-sm-3 mb-4">
                 <img
                   src="images/profile_3.jpg"
                   alt="walters"
-                  class="img-fluid rounded-circle"
+                  class="img-fluid rounded-circle hero-icon"
                 />
                 <h3 class="text-white mt-2">Bruce Walters</h3>
                 <p class="text-white">Best Friend Smile</p>
                 <p class="text-white">2019</p>
               </div>
-              <div class="col-6 col-md-3 mb-4">
+              <div class="col-6 col-sm-3 mb-4">
                 <img
                   src="images/profile_4.jpg"
                   alt="hughes"
-                  class="img-fluid rounded-circle"
+                  class="img-fluid rounded-circle hero-icon"
                 />
                 <h3 class="text-white mt-2">Henry Hughes</h3>
                 <p class="text-white">24h smiles winner</p>
@@ -157,58 +163,66 @@
           </div>
         </section>
       </div>
+
+      <!-- QUOTE SECTION -->
       <section class="quote-section bg-purple text-white text-center py-5">
         <div id="quoteCarousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="container">
                 <div class="row justify-content-center align-items-center">
-                  <div class="col-12 col-md-4">
+                  <div class="col-12 col-sm-4">
                     <img
                       src="images/profile_5.jpg"
                       alt="Description for Quote Image"
-                      class="d-block img-fluid mx-auto rounded-circle"
+                      class="d-block img-fluid mx-auto rounded-circle hero-icon"
                     />
                   </div>
-                  <div class="col-12 col-md-8">
+                  <div class="col-12 col-sm-8">
                     <blockquote class="blockquote">
-                      <p>Quote 1</p>
+                      <p>
+                        This needs to be longer to represent a block quote so.
+                        This needs to be longer to represent a block quote so.
+                        This needs to be longer to represent a block quote so.
+                        This needs to be longer to represent a block quote so.
+                        This needs to be longer to represent a block quote so.
+                        This needs to be longer to represent a block quote so.
+                      </p>
                     </blockquote>
-                    <footer class="blockquote-footer">
-                      Person Name 1
-                      <cite title="Source Title">cite 1</cite>
-                    </footer>
+                    <div class="blockquote-footer text-white">
+                      <p>Person Name 1</p>
+                      <cite title="Source Title">weather presenter</cite>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-            <!--
-              MockError-1:
-
-              This is an error that nearly made it in to the push. Come 
-              to think of it I should've just pushed it and fixed it in 
-              the next commit. When I copied the carousel-item from the 
-              previous carousel-item, per the instructions, I forgot to 
-              remove the active class.
-            -->
+              <!-- NOTE!1 ACTIVE ITEM ERROR EXAMPLE HERE -->
               <div class="container">
                 <div class="row justify-content-center align-items-center">
-                  <div class="col-12 col-md-4">
+                  <div class="col-12 col-sm-4">
                     <img
                       src="images/profile_5.jpg"
                       alt="Description for Quote Image"
-                      class="d-block img-fluid mx-auto rounded-circle"
+                      class="d-block img-fluid mx-auto rounded-circle hero-icon"
                     />
                   </div>
-                  <div class="col-12 col-md-8">
+                  <div class="col-12 col-sm-8">
                     <blockquote class="blockquote">
-                      <p>Quote 2</p>
+                      <p>
+                        This needs to be longer to represent a block quote so.
+                        This needs to be longer to represent a block quote so.
+                        This needs to be longer to represent a block quote so.
+                        This needs to be longer to represent a block quote so.
+                        This needs to be longer to represent a block quote so.
+                        This needs to be longer to represent a block quote so.
+                      </p>
                     </blockquote>
-                    <footer class="blockquote-footer">
-                      Person Name 2
-                      <cite title="Source Title">cite 2</cite>
-                    </footer>
+                    <div class="blockquote-footer text-white">
+                      <p>Person Name 2</p>
+                      <cite title="Source Title">Also weather presenter?</cite>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -224,7 +238,7 @@
             <span class="sr-only">Previous</span>
           </a>
           <a
-            class="carousel-control-next"
+            class="carousel-control-next holberton_school-icon-arrow_4"
             href="#quoteCarousel"
             role="button"
             data-slide="next"
