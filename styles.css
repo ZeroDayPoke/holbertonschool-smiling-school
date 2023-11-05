@@ -26,6 +26,18 @@
   opacity: 0.9;
 }
 
+.hero-icon {
+  max-height: 150px;
+}
+
+.bg-purple {
+  background-color: #c271ff;
+}
+
+.bg-dark-smile {
+  background-color: #071629;
+}
+
 .author-icon {
   width: 30px;
   height: 30px;
@@ -44,4 +56,9 @@
   transform: translate(-50%, -50%);
   width: 64px;
   height: 64px;
+}
+
+.signal-icon {
+  max-height: 30px;
+  float: left;
 }
