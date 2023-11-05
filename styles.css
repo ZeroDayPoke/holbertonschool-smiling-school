@@ -1,4 +1,4 @@
-/* Global styles */
+@import url("./fonts/holberton_school-icon/style.css");
 
 .header-banner-background {
   background-image: url("images/pic_1.jpg");
